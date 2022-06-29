@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Decrypt.DecryptController">
+    <children>
+        <TextField fx:id="sourceTxt" layoutX="49.0" layoutY="53.0" prefHeight="25.0" prefWidth="455.0" promptText="Source File" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="53.0" />
+        <TextField fx:id="distTxt" layoutX="49.0" layoutY="92.0" prefHeight="25.0" prefWidth="455.0" promptText="Destination Folder" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="92.0" />
+        <Button fx:id="sourceChooseBtn" layoutX="489.0" layoutY="52.0" mnemonicParsing="false" onAction="#onActionSourceChooseBtn" prefHeight="27.0" prefWidth="100.0" text="Select File" textFill="#6b6666" AnchorPane.bottomAnchor="321.0" AnchorPane.leftAnchor="489.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="52.0">
+            <font>
+                <Font name="Tw Cen MT" size="14.0" />
+            </font></Button>
+        <Button fx:id="distChooseBtn" layoutX="489.0" layoutY="92.0" mnemonicParsing="false" onAction="#onActionDistChooseBtn" prefHeight="27.0" prefWidth="100.0" text="Select Folder" textFill="#6b6666" AnchorPane.bottomAnchor="281.0" AnchorPane.leftAnchor="489.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="92.0">
+            <font>
+                <Font name="Tw Cen MT" size="14.0" />
+            </font></Button>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="16.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="320.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="559.0" AnchorPane.topAnchor="55.0">
+            <image>
+                <Image url="@../images/selectFileIcon.png" />
+            </image></ImageView>
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="282.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="93.0">
+            <image>
+                <Image url="@../images/selectFolderIcon.png" />
+            </image></ImageView>
+        <Label layoutX="27.0" layoutY="9.0" prefHeight="32.0" prefWidth="143.0" text="File Decrypt" textFill="#561e9a" AnchorPane.bottomAnchor="359.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="9.0">
+            <font>
+                <Font name="Tw Cen MT" size="28.0" />
+            </font>
+        </Label>
+        <WebView fx:id="logWebView" layoutX="34.0" layoutY="244.0" prefHeight="131.0" prefWidth="561.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="244.0" />
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="556.0" AnchorPane.topAnchor="160.0">
+            <image>
+                <Image url="@../images/passwordIcon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="52.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="521.0" AnchorPane.topAnchor="188.0">
+            <image>
+                <Image url="@../images/passShow.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="encryptBtn" layoutX="314.0" layoutY="157.0" mnemonicParsing="false" onAction="#onActionDecryptBtn" prefHeight="27.0" prefWidth="73.0" text="Decrypt" textFill="#6b6666" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="157.0">
+            <font>
+                <Font name="Tw Cen MT" size="14.0" />
+            </font></Button>
+        <PasswordField fx:id="passwordTxt" layoutX="49.0" layoutY="158.0" onMouseClicked="#onClickPasswordTxt" prefHeight="25.0" prefWidth="259.0" promptText="Password" AnchorPane.bottomAnchor="217.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="158.0" />
+        <CheckBox fx:id="showPasswordCheckBox" layoutX="82.0" layoutY="192.0" mnemonicParsing="false" onAction="#onActionShowPasswordCheckBox" prefHeight="17.0" prefWidth="484.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="192.0" />
+    </children>
+</AnchorPane>

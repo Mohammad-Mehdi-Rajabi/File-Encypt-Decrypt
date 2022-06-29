@@ -1,0 +1,16 @@
+p{
+    font-size: small;
+    font-family: -apple-system;
+}
+p.error {
+    color: rgb(255, 0, 0);
+}
+p.success{
+    color: rgba(3, 153, 5, 0.95);
+}
+p.simple{
+    color: rgba(3, 36, 153, 0.95);
+}
+p.black{
+    color: black;
+}
