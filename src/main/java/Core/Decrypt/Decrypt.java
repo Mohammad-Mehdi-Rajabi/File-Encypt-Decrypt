@@ -65,8 +65,12 @@ public class Decrypt {
         name = split1[0];
         if ((name.charAt(name.length() - 2)) == '_' && (name.charAt(name.length() - 1)) == 'C') {
             StringBuilder stringBuilder = new StringBuilder(name);
-            stringBuilder.replace(name.length() - 2, name.length(), "");
+            stringBuilder.replace(name.length() - 1, name.length(), "D");
             name = stringBuilder.toString();
+        } else {
+            StringBuilder s = new StringBuilder(name);
+            s.append("_D");
+            name = s.toString();
         }
         String postfix = split1[1];
         String distFullPath = dist + "\\" + name + "." + postfix;
