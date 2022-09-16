@@ -6,5 +6,4 @@ and you can with using that password decrypt that.<br>
 <br>
 <br>
 <br>
-<br>
 ![Screenshot](encrypt.png)
